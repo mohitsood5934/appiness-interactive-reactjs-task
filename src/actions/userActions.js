@@ -16,7 +16,7 @@ export const login = (username, password) => (dispatch) => {
   } else {
     const errorMessage =
       username.length === 0 || password.length === 0
-        ? "Password or username can't be empty"
+        ? "Username or password can't be empty"
         : "Invalid username or password";
 
     dispatch({
