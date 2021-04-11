@@ -12,6 +12,8 @@
 - On successfull login ,user will be taken to '/dashboard' page where he can see list of all users.
 - Please use username as hruday@gmail.com and password as hruday123
 
+![LoginPage](https://user-images.githubusercontent.com/26309496/114310627-fbb63c80-9b08-11eb-849f-211dfae92c5d.png)
+
 ### Dashboard page 
 - It can be only accessed if the user is currently logged in.
 - We will take user to dashboard page on successfull login.
