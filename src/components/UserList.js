@@ -6,12 +6,15 @@ import {
   TableHead,
   TableRow,
   Paper,
+  Typography,
 } from "@material-ui/core";
 
 const UserList = ({ users, title }) => (
-  <div>
-    <h1 className="title">{title}</h1>
-    <Paper className="container">
+  <>
+    <Paper style={{ marginTop: "6rem" }}>
+      <Typography component="h1" variant="h5" align="center">
+        {title}
+      </Typography>
       <Table>
         <TableHead>
           <TableRow>
@@ -39,7 +42,7 @@ const UserList = ({ users, title }) => (
         </TableBody>
       </Table>
     </Paper>
-  </div>
+  </>
 );
 
 export default UserList;
