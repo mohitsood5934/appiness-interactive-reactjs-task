@@ -36,20 +36,15 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar>
+      <AppBar position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Appiness
           </Typography>
           {isLoggedIn && (
-            <>
-              <Button color="inherit" href="/dashboard">
-                Dashboard
-              </Button>
-              <Button color="inherit" onClick={logOutHandler}>
-                Logout
-              </Button>
-            </>
+            <Button color="inherit" onClick={logOutHandler}>
+              Logout
+            </Button>
           )}
           {!isLoggedIn && (
             <Button color="inherit" href="/login">
