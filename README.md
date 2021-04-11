@@ -1,5 +1,5 @@
 ## appiness-interactive-reactjs-task
-## Live Demo : https://appiness-mohit.herokuapp.com/login
+## Live Demo : https://appiness-mohit.herokuapp.com/
 ## Steps to run
 - Clone this repository in your local system using command : git clone https://github.com/mohitsood5934/appiness-interactive-reactjs-task.git
 - After cloning use npm i command to install all the needed dependencies
