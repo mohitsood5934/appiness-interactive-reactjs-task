@@ -1,5 +1,10 @@
 ## appiness-interactive-reactjs-task
 ## Live Demo : https://appiness-mohit.herokuapp.com/login
+## Steps to run
+- Clone this repository in your local system using command : git clone https://github.com/mohitsood5934/appiness-interactive-reactjs-task.git
+- After cloning use npm i command to install all the needed dependencies
+- Go inside src directory
+- npm start will start your application on port 3000,if your application is already using 3000 port then run application on some other port
 ## Technologoies Used:
 - React
 - Redux
