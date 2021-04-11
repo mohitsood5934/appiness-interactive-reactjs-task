@@ -45,7 +45,7 @@ const LoginScreen = ({ history }) => {
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error } = userLogin;
+  const { loading, error, userInfo } = userLogin;
 
   const loginHandler = async (e) => {
     e.preventDefault();
@@ -53,13 +53,12 @@ const LoginScreen = ({ history }) => {
   };
 
   useEffect(() => {
-    console.log("I am here!!");
-    if (isLoggedIn) {
+    if (isLoggedIn || (userInfo && userInfo.username)) {
       history.push("/dashboard");
     } else {
       history.push("/login");
     }
-  }, [isLoggedIn, history]);
+  }, [isLoggedIn, userInfo, history]);
 
   return (
     <>

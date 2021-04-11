@@ -12,6 +12,7 @@ export const login = (username, password) => (dispatch) => {
   if (USER.username === username && USER.password === password) {
     dispatch({ type: USER_LOGIN_SUCCESS, payload: USER });
     localStorage.setItem("isLoggedIn", true);
+    localStorage.setItem("userInfo", JSON.stringify(USER));
   } else {
     const errorMessage =
       username.length === 0 && password.length === 0
@@ -31,4 +32,5 @@ export const login = (username, password) => (dispatch) => {
 export const logout = () => (dispatch) => {
   dispatch({ type: USER_LOGOUT });
   localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("userInfo");
 };

@@ -29,14 +29,12 @@ const UserList = ({ users, title }) => (
         <TableBody>
           {users.map(({ id, name, age, email, gender, phoneNo }) => (
             <TableRow key={id}>
-              <TableCell component="th" scope="row">
-                {id}
-              </TableCell>
-              <TableCell numeric>{name}</TableCell>
-              <TableCell numeric>{age}</TableCell>
-              <TableCell numeric>{email}</TableCell>
-              <TableCell numeric>{gender}</TableCell>
-              <TableCell numeric>{phoneNo}</TableCell>
+              <TableCell>{id}</TableCell>
+              <TableCell>{name}</TableCell>
+              <TableCell>{age}</TableCell>
+              <TableCell>{gender}</TableCell>
+              <TableCell>{email}</TableCell>
+              <TableCell>{phoneNo}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -14,18 +14,15 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
   },
 }));
 
 const Header = () => {
-  const classes = useStyles();
-  const history = useHistory();
-  const dispatch = useDispatch();
+  const classes = useStyles(),
+    history = useHistory(),
+    dispatch = useDispatch();
 
   const logOutHandler = async () => {
     await dispatch(logout());
