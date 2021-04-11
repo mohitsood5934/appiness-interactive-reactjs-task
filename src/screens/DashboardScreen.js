@@ -5,8 +5,8 @@ import CustomTitle from "../components/CustomTitle";
 import UserList from "../components/UserList";
 
 const DashboardScreen = ({ history }) => {
-  const users = employeesData.user || [];
-  const isLoggedIn = localStorage.getItem("isLoggedIn") || false;
+  const users = employeesData.user || [],
+    isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
   useEffect(() => {
     if (!isLoggedIn) {

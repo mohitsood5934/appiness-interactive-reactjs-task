@@ -15,13 +15,10 @@ export const login = (username, password) => (dispatch) => {
     localStorage.setItem("userInfo", JSON.stringify(USER));
   } else {
     const errorMessage =
-      username.length === 0 && password.length === 0
-        ? "Please enter username and password"
-        : username.length === 0
-        ? "Please enter username"
-        : password.length === 0
-        ? "Please enter password"
+      username.length === 0 || password.length === 0
+        ? "Password or username can't be empty"
         : "Invalid username or password";
+
     dispatch({
       type: USER_LOGIN_FAILED,
       payload: errorMessage,
