@@ -18,6 +18,8 @@
 - It can be only accessed if the user is currently logged in.
 - We will take user to dashboard page on successfull login.
 
+![dashboardPage](https://user-images.githubusercontent.com/26309496/114310817-cc53ff80-9b09-11eb-9787-693797f5ccbc.png)
+
 ### Logout Functionality
  - On pressing LOGOUT button ,user will be logged out and we will take user back to login page.
 
